@@ -1,0 +1,18 @@
+const mongoose = require('mongoose');
+
+const characterSchema = new mongoose.Schema({
+  image: {type: String,required: true},
+  firstName: {type: String,required: true},
+  lastName: {type: String,required: true},
+  gender: {type: Boolean,required: true},
+  dob: {type: Date,required: true},
+  zodiac: {type: String,required: true},
+  family: {type: Array,required: true},
+  description: {type: String,required: true}
+}, {
+  timestamps: true
+});
+
+const Character = mongoose.model('Character', characterSchema);
+
+module.exports = Character;
