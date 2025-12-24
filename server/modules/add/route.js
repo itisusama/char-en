@@ -5,7 +5,7 @@ import {
   createCharacter,
   updateCharacter,
   deleteCharacter
-} from'../controller.js';
+} from './controller.js';
 
 const router = express.Router();
 
@@ -20,4 +20,4 @@ router
   .put(updateCharacter)
   .delete(deleteCharacter);
 
-module.exports = router;
+export default router;

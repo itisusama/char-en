@@ -1,9 +1,9 @@
-import Character from "./model.js"
+import { Character } from './model.js'
 
 // @desc    Get all characters
 // @route   GET /api/characters
 // @access  Public
-exports.getCharacters = async (req, res) => {
+export const getCharacters = async (req, res) => {
   try {
     const characters = await Character.find();
     res.status(200).json({
@@ -22,7 +22,7 @@ exports.getCharacters = async (req, res) => {
 // @desc    Get single character
 // @route   GET /api/characters/:id
 // @access  Public
-exports.getCharacter = async (req, res) => {
+export const getCharacter = async (req, res) => {
   try {
     const character = await Character.findById(req.params.id);
     
@@ -48,7 +48,7 @@ exports.getCharacter = async (req, res) => {
 // @desc    Create new character
 // @route   POST /api/characters
 // @access  Public
-exports.createCharacter = async (req, res) => {
+export const createCharacter = async (req, res) => {
   try {
     const character = await Character.create(req.body);
     
@@ -67,7 +67,7 @@ exports.createCharacter = async (req, res) => {
 // @desc    Update character
 // @route   PUT /api/characters/:id
 // @access  Public
-exports.updateCharacter = async (req, res) => {
+export const updateCharacter = async (req, res) => {
   try {
     const character = await Character.findByIdAndUpdate(
       req.params.id,
@@ -100,7 +100,7 @@ exports.updateCharacter = async (req, res) => {
 // @desc    Delete character
 // @route   DELETE /api/characters/:id
 // @access  Public
-exports.deleteCharacter = async (req, res) => {
+export const deleteCharacter = async (req, res) => {
   try {
     const character = await Character.findByIdAndDelete(req.params.id);
     
@@ -113,7 +113,7 @@ exports.deleteCharacter = async (req, res) => {
     
     res.status(200).json({
       success: true,
-      data: {}
+      message: "deleted succesful"
     });
   } catch (error) {
     res.status(500).json({

@@ -1,6 +1,7 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const characterSchema = new mongoose.Schema({
+const characterSchema = new mongoose.Schema(
+  {
   image: {type: String,required: true},
   firstName: {type: String,required: true},
   lastName: {type: String,required: true},
@@ -9,10 +10,8 @@ const characterSchema = new mongoose.Schema({
   zodiac: {type: String,required: true},
   family: {type: Array,required: true},
   description: {type: String,required: true}
-}, {
-  timestamps: true
-});
+}, 
+{timestamps: true},
+);
 
-const Character = mongoose.model('Character', characterSchema);
-
-module.exports = Character;
+export const Character = mongoose.model('Character', characterSchema);
