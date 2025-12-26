@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast';
-import { page } from './imports/page';
+import { page, layout } from './imports/page';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,6 +18,11 @@ const App = () => {
         <Toaster />
         <Routes>
           <Route path="/" element={<page.Landing />} />
+          
+          <Route element={<layout.DashboardLayout />}>
+            <Route path="/dashboard" element={<page.Dashboard />} />
+          </Route>
+
         </Routes>
       </Router>
     </div>

@@ -11,4 +11,6 @@ TASKS:
 - Adding auto pages vite plugin
 - Create the page in App.tsx then after that CTRL + Shift and Enter
 - Making barrel import files
-- Set up your endpoints in src/lib/endpoints.ts
+- Set up endpoints in src/lib/endpoints.ts
+- Creating layouts.
+- Creating auth function.
