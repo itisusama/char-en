@@ -18,10 +18,16 @@ const App = () => {
         <Toaster />
         <Routes>
           <Route path="/" element={<page.Landing />} />
-          
+          {/* AUTH ROUTES */}
+          <Route path="/login" element={<page.Login />} />
+          <Route path="/register" element={<page.Register />} />
+          <Route path="/reset" element={<page.Reset />} />
+          {/* AUTH ROUTES */}
+          {/* DASHBOARD ROUTES */}
           <Route element={<layout.DashboardLayout />}>
             <Route path="/dashboard" element={<page.Dashboard />} />
           </Route>
+          {/* DASHBOARD ROUTES */}
 
         </Routes>
       </Router>

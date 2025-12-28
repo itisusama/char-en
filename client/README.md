@@ -14,3 +14,4 @@ TASKS:
 - Set up endpoints in src/lib/endpoints.ts
 - Creating layouts.
 - Creating auth function.
+- Creating Auth components
