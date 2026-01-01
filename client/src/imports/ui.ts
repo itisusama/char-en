@@ -1,11 +1,15 @@
+import DashboardCard from "@/components/dashboard/dashboard-card";
+import DashboardHeader from "@/components/dashboard/dashboard-header";
 import MainHeading from "@/components/shared/main-heading";
 import UserMenu from "@/components/shared/user-menu";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import CardSlot from "@/layouts/slots/card-slot";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 
 export const ui = {
@@ -15,5 +19,9 @@ export const ui = {
     FormMessage, DropdownMenu, DropdownMenuTrigger,
     Avatar, AvatarFallback, DropdownMenuContent,
     DropdownMenuLabel, DropdownMenuItem, UserMenu,
-    Separator
+    Separator, DashboardHeader, Card, 
+    CardHeader, CardContent, CardTitle,
+    DashboardCard
 }
+
+export const slot = {CardSlot}
