@@ -6,6 +6,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Separator } from "@radix-ui/react-dropdown-menu";
 
 export const ui = {
     Button, MainHeading, Form, 
@@ -13,5 +14,6 @@ export const ui = {
     FormControl, Input, Label,
     FormMessage, DropdownMenu, DropdownMenuTrigger,
     Avatar, AvatarFallback, DropdownMenuContent,
-    DropdownMenuLabel, DropdownMenuItem, UserMenu
+    DropdownMenuLabel, DropdownMenuItem, UserMenu,
+    Separator
 }

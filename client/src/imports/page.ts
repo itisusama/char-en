@@ -4,6 +4,7 @@ import Landing from '@/pages/Landing'
 import Login from '@/pages/auth/Login';
 import Register from '@/pages/auth/Register';
 import Reset from '@/pages/auth/Reset';
+import AddFinance from '@/pages/AddFinance';
 
-export const page = {Landing, Dashboard, Login, Register, Reset}
+export const page = {Landing, Dashboard, Login, Register, Reset, AddFinance}
 export const layout = {DashboardLayout}

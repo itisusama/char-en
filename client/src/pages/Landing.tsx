@@ -9,13 +9,13 @@ export default function Landing() {
   return (
     <div className="h-screen w-full flex flex-col justify-center items-center">
       <ui.MainHeading
-        title="Character Encyclopedia"
+        title="Finanical Log"
         data-aos="fade-down"
       />
       <p className="text-center my-4" data-aos="fade-up">
-        Hi! There. Do you have issues in what character to use?
+        Hi! There. Do you have issues managing your personal finaices?
         <br />
-         You can create or find characters for you next novel here.
+         You can create or track you finances here.
       </p>
 
           {userStore.user ? (

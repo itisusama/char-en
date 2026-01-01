@@ -21,7 +21,7 @@ export default function SignupForm() {
           <div className="p-8 pb-6">
             <div>
               <Link to="/" aria-label="go home">
-                <img src="/logo.png" alt="logo" className="w-9 h-9" />
+                <img src={icon.Logo} alt="logo" className="w-9 h-9" />
               </Link>
               <h1 className="mb-1 mt-4 text-xl font-semibold">
                 Register In to Chracter Encyclopedia

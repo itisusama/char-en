@@ -18,10 +18,10 @@ export default function LoginForm() {
           <div className="p-8 pb-6">
             <div>
               <Link to="/" aria-label="go home">
-                <img src="/logo.png" alt="logo" className="w-9 h-9" />
+                <img src={icon.Logo} alt="logo" className="w-9 h-9" />
               </Link>
               <h1 className="mb-1 mt-4 text-xl font-semibold">
-                Sign In to Character Encyclopedia
+                Sign In to Finanical Log
               </h1>
               <p className="text-sm">Welcome back! Sign in to continue</p>
             </div>
