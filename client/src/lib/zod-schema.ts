@@ -39,6 +39,10 @@ export const newPasswordSchema = z.object({
   password: z.string().min(8, "Password must be at least 8 characters"),
 });
 
+// ADD CATEGORY SCHEMA
+export const categorySchema = z.object({
+  name: z.string().min(5, "Category name must be at least 5 characters"),
+});
 
 // AUTH SCHEMA TYPES
 export type LoginSchema = z.infer<typeof loginSchema>;
@@ -46,3 +50,6 @@ export type NewPasswordSchema = z.infer<typeof newPasswordSchema>;
 export type ForgetSchema = z.infer<typeof forgetSchema>;
 export type RegisterSchema = z.infer<typeof registerSchema>;
 export type OtpSchema = z.infer<typeof otpSchema>;
+
+// ADD CATEGORY SCHEMA TYPE
+export type CategorySchema = z.infer<typeof categorySchema>;

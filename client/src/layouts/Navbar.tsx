@@ -18,6 +18,14 @@ export default function Navbar() {
                     </Link>
                 )
             }
+
+            {
+                location.pathname !== '/add-category' && (
+                    <Link to="/add-category">
+                        <ui.Button variant="outline" size="sm"> <icon.Plus/> Add Category</ui.Button>
+                    </Link>
+                )
+            }
             <ui.UserMenu/>
         </div>
         </nav>

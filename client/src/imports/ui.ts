@@ -5,12 +5,14 @@ import UserMenu from "@/components/shared/user-menu";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog } from "@/components/ui/dialog";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import CardSlot from "@/layouts/slots/card-slot";
 import { Separator } from "@radix-ui/react-dropdown-menu";
+import { Modal } from "@/components/shared/Modal"
 
 export const ui = {
     Button, MainHeading, Form, 
@@ -21,7 +23,7 @@ export const ui = {
     DropdownMenuLabel, DropdownMenuItem, UserMenu,
     Separator, DashboardHeader, Card, 
     CardHeader, CardContent, CardTitle,
-    DashboardCard
+    DashboardCard, Dialog, Modal
 }
 
 export const slot = {CardSlot}
