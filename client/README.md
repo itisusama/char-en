@@ -1,4 +1,4 @@
-# Character gen project
+# Financial Log project
 
 TASKS:
 - installing needed libraries
